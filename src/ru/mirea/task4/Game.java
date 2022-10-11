@@ -18,7 +18,7 @@ public class Game extends JFrame {
         super("AC Milan vs Real Madrid");
         setSize(400, 400);
         setLayout(new BorderLayout());
-
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(but1 , BorderLayout.WEST);
         but1.setForeground(Color.RED);
         add(but2 , BorderLayout.EAST);
