@@ -8,7 +8,6 @@ public class Card implements Comparable<Card> {
     public int getNumber() {
         return number;
     }
-
     @Override
     public int compareTo(Card o) {
         int result = 0;
@@ -25,8 +24,5 @@ public class Card implements Comparable<Card> {
             result = -1;
         }
         return result;
-    }
-    public String toString(){
-        return "" + this.number;
     }
 }

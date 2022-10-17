@@ -20,8 +20,8 @@ public class Main {
         reverse(deck2);
         Card card1, card2;
         int rounds = 0;
-        System.out.println(deck1 + "Первая");
-        System.out.println(deck2 + "Вторая");
+        System.out.println(deck1 + " Первая");
+        System.out.println(deck2 + " Вторая");
         while (!deck1.empty() && !deck2.empty() && rounds!=106){
             rounds++;
             card1 = deck1.pop();
@@ -44,8 +44,8 @@ public class Main {
                 deck2.addAll(board);
             }
             board.clear();
-            System.out.println(deck1 + "Первая");
-            System.out.println(deck2 + "Вторая");
+            System.out.println(deck1 + " Первая");
+            System.out.println(deck2 + " Вторая");
         }
         if (rounds == 106){
             System.out.println("botva");
