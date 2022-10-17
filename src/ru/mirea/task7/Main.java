@@ -30,12 +30,14 @@ public class Main {
             board.push(card1);
             System.out.println(card1 + " " + card2);
             if (card1.compareTo(card2) == 1){
+                reverse(deck1);
                 while(!deck1.empty()){
                     board.push(deck1.pop());
                 }
                 deck1.addAll(board);
             }
             if (card1.compareTo(card2) == -1){
+                reverse(deck2);
                 while(!deck2.empty()){
                     board.push(deck2.pop());
                 }
@@ -50,11 +52,11 @@ public class Main {
             System.exit(0);
         }
         if (deck1.empty()){
-            System.out.println("second" + rounds);
+            System.out.println("second " + rounds);
             System.exit(0);
         }
         else{
-            System.out.println("first" + rounds);
+            System.out.println("first " + rounds);
             System.exit(0);
         }
     }
