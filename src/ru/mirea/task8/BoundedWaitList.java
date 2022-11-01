@@ -18,6 +18,6 @@ public class BoundedWaitList<E> extends WaitList<E>{
         }
     }
     public String toString(){
-        return content.toString();
+        return super.toString();
     }
 }
