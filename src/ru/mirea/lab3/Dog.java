@@ -1,6 +1,8 @@
 package ru.mirea.lab3;
 
-public abstract class Dog {
+public abstract class
+
+Dog {
     private int length;
     private int weight;
     private String breed;
