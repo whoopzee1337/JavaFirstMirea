@@ -21,7 +21,7 @@ public class Animation extends JFrame {
         setVisible(true);
         count = 0;
         timer = new Timer();
-        timer.schedule(animate , 1,200);
+        timer.schedule(animate , 1 , 200);
 
     }
     TimerTask animate = new TimerTask() {

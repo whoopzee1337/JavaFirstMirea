@@ -28,13 +28,17 @@ public class GuessGame extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             input = Integer.parseInt(field.getText());
-            System.out.println(input);
             if (input == number && count!=0) {
                 JOptionPane.showMessageDialog(null, "Вы угадали число!");
+                System.exit(0);
             }
-            else if (input != number && count!=0) {
+            else if (input != number && count!=0 && input < number) {
                 count--;
-                JOptionPane.showMessageDialog(null , "Вы не угадали число \n Осталось попыток: " +count);
+                JOptionPane.showMessageDialog(null , "Вы не угадали число\n Загаданное число больше \n Осталось попыток: " +count);
+            }
+            else if (input != number && count!=0 && input > number) {
+                count--;
+                JOptionPane.showMessageDialog(null , "Вы не угадали число\n Загаданное число меньше \n Осталось попыток: " +count);
             }
             else if (count == 0){
                 count = -1;
@@ -42,6 +46,7 @@ public class GuessGame extends JFrame {
             }
             else if(count == -1){
                 JOptionPane.showMessageDialog(null , "Попыток больше нет");
+                System.exit(0);
             }
 
         }
