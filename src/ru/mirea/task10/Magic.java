@@ -1,4 +1,4 @@
-package ru.mirea.task10.second;
+package ru.mirea.task10;
 
 public class Magic implements Chair{
     @Override

@@ -1,4 +1,4 @@
-package ru.mirea.task10.second;
+package ru.mirea.task10;
 
 public class Client {
     public Chair sit(String input){
