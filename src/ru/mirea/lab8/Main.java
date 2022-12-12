@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
         String text = in.nextLine();
-        try(FileWriter writer = new FileWriter("TextFile1")){
+        try(FileWriter writer = new FileWriter("TextFile" , true)){
             writer.write(text);
             writer.flush();
         }

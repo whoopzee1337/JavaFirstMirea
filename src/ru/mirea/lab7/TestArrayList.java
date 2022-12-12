@@ -17,5 +17,7 @@ public class TestArrayList {
         System.out.println(list);
         list.sort(Integer::compareTo);
         System.out.println(list);
+        list.clear();
+        list.isEmpty();
     }
 }
